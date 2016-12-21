@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Contact Module"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <general
+                jcr:primaryType="cq:Panel"
+                title="General">
+                <items jcr:primaryType="cq:WidgetCollection">
+	                <title
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Title"
+		                    name="./title"
+		                    xtype="textfield" />
+	            </items>        	
+            </general>
+            <labels
+                jcr:primaryType="cq:Panel"
+                title="Labels">
+                <items jcr:primaryType="cq:WidgetCollection">
+	                <message
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Message"
+		                    name="./message"
+		                    xtype="textfield" />
+	                <name
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Name"
+		                    name="./name"
+		                    xtype="textfield"/>
+		            <email
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Email"
+		                    name="./email"
+		                    xtype="textfield"/>  
+		            <phone
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Phone"
+		                    name="./phone"
+		                    xtype="textfield"/>
+		             <labelsTitle
+		                	jcr:primaryType="cq:Widget"
+		                    fieldLabel="Title"
+		                    name="./labelsTitle"
+		                    xtype="textfield"/>		    		               
+		            <button	
+		            		jcr:primaryType="cq:Widget"
+		                    fieldLabel="Button"
+		                    name="./button"
+		                    xtype="textfield" />	
+					 <confirmationMessage 
+                			jcr:primaryType="cq:Widget"
+		                    fieldLabel="Confirmation message"
+		                    name="./confirmationMessage"
+		                    xtype="textfield" />		                    
+		             	             
+				</items>		                                     
+            </labels>         
+        </items>
+    </items>
+</jcr:root>
